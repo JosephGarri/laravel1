@@ -14,7 +14,6 @@
     $json2 = json_decode( $response2->getBody()->getContents(),true);
     $json3 = json_decode( $response3->getBody()->getContents(),true);
     
-    var_dump($json1);
 ?>
  <!DOCTYPE html>
 <html lang="en">
