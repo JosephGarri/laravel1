@@ -14,6 +14,7 @@
     $json2 = json_decode( $response2->getBody()->getContents(),true);
     $json3 = json_decode( $response3->getBody()->getContents(),true);
     
+    var_dump($json1);
 ?>
  <!DOCTYPE html>
 <html lang="en">
@@ -36,13 +37,14 @@
 			<th>ZONA HORARIA</th>
             <th>COSTA RICA/ SAN JOSE</th>
             <th>USA / NEW YORK</th>
-            <th>BELGRADE SERVIA</th>
+            <th>BELGRADE SERBIA</th>
 		</tr>
 		<tr>
             <th>FECHA Y HORA</th>
             <td><?php echo("FECHA: ".substr(str_replace("T"," HORA: ",$json1["datetime"]),0,-10)) ?></td>
             <td><?php echo("FECHA: ".substr(str_replace("T"," HORA: ",$json2["datetime"]),0,-10)) ?></td>
             <td><?php echo("FECHA: ".substr(str_replace("T"," HORA: ",$json3["datetime"]),0,-10))?></td>
+            
         </tr>
        
      
